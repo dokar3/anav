@@ -67,10 +67,13 @@ navigate(NavMap.Settings)
 
 ```groovy
 buildscript {
-   // ...
-   dependencies {
-       classpath ''
-   }
+    repositories {
+    	// ...
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'io.github.dokar3:anav-gradle-plugin:0.0.1'
+    }
 }
 ```
 
