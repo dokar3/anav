@@ -1,0 +1,6 @@
+include ':about'
+include ':settings'
+include ':home'
+include ':base'
+include ':app'
+rootProject.name = "mmsample"

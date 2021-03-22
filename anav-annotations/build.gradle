@@ -1,0 +1,8 @@
+plugins {
+    id 'java-library'
+}
+
+dependencies {
+}
+
+apply from: "${rootProject.projectDir}/gradle/publish.gradle"

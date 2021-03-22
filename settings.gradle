@@ -1,0 +1,9 @@
+include ':kotlin-sample'
+include ':anav-gradle-plugin'
+include ':anav-annotations'
+include ':anav-compiler'
+include ':anav-utils'
+include ':java-sample'
+rootProject.name = "anav"
+project(':java-sample').projectDir = new File('samples/java-sample')
+project(':kotlin-sample').projectDir = new File('samples/kotlin-sample')

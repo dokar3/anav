@@ -1,0 +1,22 @@
+plugins {
+    id 'java-gradle-plugin'
+    id 'kotlin'
+}
+
+gradlePlugin {
+    plugins {
+        anavPlugin {
+            id = 'com.dokar.anav'
+            implementationClass = 'com.dokar.anav.plugin.AnavPlugin'
+        }
+    }
+}
+
+dependencies {
+    implementation gradleApi()
+
+    implementation "com.android.tools.build:gradle:$agp_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}
+
+apply from: "${rootProject.projectDir}/gradle/publish.gradle"

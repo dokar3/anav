@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dokar.anav.ktsample">
+
+    <application android:label="Anav.sample.kt">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".ProfileActivity" />
+    </application>
+</manifest>
