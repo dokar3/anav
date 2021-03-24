@@ -24,7 +24,7 @@ But we can use the `Intent.setClassName(context, className)` do the same thing:
 ```kotlin
 Intent(Intent.ACTION_VIEW).let {
     it.setClassName(this, "x.y.z.SettingsActivity")
-    startActivity(this)
+    startActivity(it)
 }
 ```
 
@@ -54,7 +54,7 @@ Then, you can remove hardcode strings from your navigation code:
 ```kotlin
 Intent(Intent.ACTION_VIEW).let {
     it.setClassName(this, NavMap.Settings)
-    startActivity(this)
+    startActivity(it)
 }
 
 // Or use functions from anav utils library
