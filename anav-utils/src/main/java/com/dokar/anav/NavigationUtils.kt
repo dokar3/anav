@@ -9,7 +9,7 @@ fun Context.navigate(className: String) {
     navigate(className) {}
 }
 
-inline fun Context.navigate(className: String, block: Intent.() -> Unit) {
+inline fun Context.navigate(className: String, block: (Intent) -> Unit) {
     Intent(Intent.ACTION_VIEW).let {
         it.setClassName(this, className)
         block(it)

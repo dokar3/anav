@@ -37,7 +37,7 @@ dependencies {
     
     implementation project(':base')
 
-    kapt 'io.github.dokar3:anav-compiler:0.0.1'
+    kapt "io.github.dokar3:anav-compiler:$anav_version"
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 

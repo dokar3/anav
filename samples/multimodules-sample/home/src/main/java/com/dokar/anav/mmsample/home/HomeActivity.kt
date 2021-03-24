@@ -3,9 +3,12 @@ package com.dokar.anav.mmsample.home
 import android.app.Activity
 import android.os.Bundle
 import com.dokar.anav.annotation.Navigable
+
+// make project to generate these files
 import com.dokar.anav.mmsample.base.navigation.NavArgs.Account.userId
 import com.dokar.anav.mmsample.base.navigation.NavArgs.Account.username
 import com.dokar.anav.mmsample.base.navigation.NavMap
+
 import com.dokar.anav.mmsample.home.databinding.ActivityHomeBinding
 import com.dokar.anav.navigate
 
@@ -22,8 +25,8 @@ class HomeActivity : Activity() {
 
         binding.btnAccount.setOnClickListener {
             navigate(NavMap.Home.Account) {
-                userId = 34612
-                username = "Bee"
+                it.userId = 34612
+                it.username = "Bee"
             }
         }
 
@@ -32,6 +35,7 @@ class HomeActivity : Activity() {
         }
 
         binding.btnSettings.setOnClickListener {
+            navigate(NavMap.Settings)
         }
 
     }

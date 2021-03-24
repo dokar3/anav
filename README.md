@@ -49,7 +49,7 @@ object NavMap {
 }
 ```
 
-Then, remove hardcode strings from your navigation code:
+Then, you can remove hardcode strings from your navigation code:
 
 ```kotlin
 Intent(Intent.ACTION_VIEW).let {
@@ -72,7 +72,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'io.github.dokar3:anav-gradle-plugin:0.0.1'
+        classpath 'io.github.dokar3:anav-gradle-plugin:0.0.2'
     }
 }
 ```
@@ -96,10 +96,10 @@ nanvConfig {
 
 ```groovy
 dependencies {
-    implementation 'io.github.dokar3:anav-annotations:0.0.1'
-    kapt 'io.github.dokar3:anav-compiler:0.0.1'
+    implementation 'io.github.dokar3:anav-annotations:0.0.2'
+    kapt 'io.github.dokar3:anav-compiler:0.0.2'
     // Optional
-    implementation 'io.github.dokar3:anav-utils:0.0.1'
+    implementation 'io.github.dokar3:anav-utils:0.0.2'
 }
 ```
 
